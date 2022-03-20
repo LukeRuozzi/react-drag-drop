@@ -13,10 +13,14 @@ p {
   --drag-drop-color: blue;
 }
 
-.drag-drop {
+.dropzone {
   cursor: pointer;
   width: 300px;
-  height: 80vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
   border-width: 3px;
   border-radius: 5px;
   border-style: dashed;
@@ -24,7 +28,7 @@ p {
   padding: 10px;
 }
 
-.drag-drop:hover {
+.dropzone:hover {
   opacity: 0.6;
   border-color: var(--drag-drop-color);
   color: var(--drag-drop-color);
